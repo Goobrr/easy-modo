@@ -1,6 +1,6 @@
 const rules = Vars.state.rules;
 
-Events.on(WorldLoadEvent.class, e => {
+Events.on(WorldLoadEvent.getClass(), e => {
     rules.dropZoneRadius = 150;
     rules.waveSpacing = 4 * Time.toMinutes;
 
